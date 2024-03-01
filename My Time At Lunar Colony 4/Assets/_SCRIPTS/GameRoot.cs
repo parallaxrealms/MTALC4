@@ -8,12 +8,6 @@ public class GameRoot : MonoBehaviour
 {
     public static GameRoot current;
 
-    [SerializeField]
-    private GameObject debugControlObject;
-    private DebugControl debugControl;
-
-    public GameObject gameCamera;
-
     private void Awake()
     {
         if (current == null)
@@ -34,6 +28,6 @@ public class GameRoot : MonoBehaviour
 
     public void InitGame()
     {
-
+        SceneManager.LoadScene("Game");
     }
 }
