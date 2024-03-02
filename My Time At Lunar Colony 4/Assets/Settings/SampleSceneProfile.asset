@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
-    m_Value: 1.5
+    m_OverrideState: 0
+    m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 25
+    m_Value: 20
   colorFilter:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0.81078476, g: 0.7859113, b: 0.8207547, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 10
 --- !u!114 &-7893295128165547882
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -46,7 +46,7 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   intensity:
     m_OverrideState: 1
     m_Value: 6
@@ -143,7 +143,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   neutralHDRRangeReductionMode:
     m_OverrideState: 0
     m_Value: 2
@@ -183,7 +183,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.025
 --- !u!114 &5961328698687908739
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -199,13 +199,13 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.635
+    m_Value: 0.324
   response:
     m_OverrideState: 1
-    m_Value: 0.879
+    m_Value: 0.32
   texture:
     m_OverrideState: 0
     m_Value: {fileID: 0}

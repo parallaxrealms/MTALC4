@@ -818,7 +818,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1097,8 +1097,8 @@ RenderTexture:
   m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 0
   serializedVersion: 5
-  m_Width: 656
-  m_Height: 376
+  m_Width: 396
+  m_Height: 228
   m_AntiAliasing: 1
   m_MipCount: -1
   m_DepthStencilFormat: 0
@@ -1382,6 +1382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf00119b47e0144468e5b52e0f649da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terminalFullScreen: {fileID: 0}
 --- !u!1 &822070169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1491,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f4cef41c4a2ccb0429cba5bcb3867616, type: 2}
 --- !u!4 &832575519
 Transform:
   m_ObjectHideFlags: 0
@@ -2085,7 +2086,7 @@ MonoBehaviour:
   snappables:
   - {fileID: 2317085925959634128}
   storedCamRotation: {x: -0, y: -0, z: -0, w: 1}
-  storedPixelMultiplier: 3
+  storedPixelMultiplier: 5
   origOrthoSize: 0
 --- !u!1 &1153835165
 GameObject:
@@ -2427,7 +2428,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.6444445, y: 2.088889, z: 0}
+  m_LocalScale: {x: 3.6666667, y: 2.1111112, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 188152972}
@@ -2539,6 +2540,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a10215d2099fc5245916026953fc9086,
         type: 2}
+    - target: {fileID: 22325660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3552,12 +3557,12 @@ MonoBehaviour:
   layerMaskUI:
     serializedVersion: 2
     m_Bits: 32
-  pixelMultiplier: 3
-  ditherRepeatSize: 8
+  pixelMultiplier: 5
+  ditherRepeatSize: 6
   graphicsFormat: 28
   lastScreenSize: {x: 1920, y: 1080}
   screenSize: {x: 1920, y: 1080}
-  renderTextureSize: {x: 656, y: 376}
+  renderTextureSize: {x: 396, y: 228}
   screenHeight: 1080
   uPixelatorCam: {fileID: 3435330693698127948}
   autoDetectCameras: 0
@@ -3778,7 +3783,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
