@@ -13,6 +13,8 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 
+		public bool inTerminal = false;
+
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
@@ -68,7 +70,10 @@ namespace StarterAssets
 
 		private void OnApplicationFocus(bool hasFocus)
 		{
-			SetCursorState(cursorLocked);
+			if (!inTerminal)
+			{
+				SetCursorState(cursorLocked);
+			}
 		}
 
 		private void SetCursorState(bool newState)
@@ -79,13 +84,12 @@ namespace StarterAssets
 		public void TurnOffCursorLock()
 		{
 			Cursor.lockState = CursorLockMode.None;
-			Debug.Log(Cursor.lockState);
+			inTerminal = true;
 		}
 		public void TurnOnCursorLock()
 		{
 			Cursor.lockState = CursorLockMode.Locked;
-			Debug.Log(Cursor.lockState);
+			inTerminal = false;
 		}
 	}
-
 }
